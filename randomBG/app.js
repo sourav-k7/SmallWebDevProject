@@ -11,6 +11,7 @@ function change() {
     moveOutColor = invcolor;
     moveIn=color;
     head.style.color = invcolor;
+    head.innerText = color;
     button.style.color = color;
     button.style.borderColor = color;
     button.style.background = invcolor;
