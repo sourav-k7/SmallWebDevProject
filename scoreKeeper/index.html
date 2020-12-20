@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        
+            <img src="https://blog.playo.co/wp-content/uploads/2017/03/table-tennis-shots.jpg" alt="">
+            <span id="head" class="shadow bd">
+                Ping Pong Score Keeper
+            </span>        
+            <span id="score" class="shadow bd">
+                <h1><span id="p1score">0</span> to <span id="p2score">0</span></h1>
+                <p>use the button below to keep the score</p>
+                <span >Playing to</span>
+                <select name="point" class="focus" id="select">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </span>
+            <div id="btnDiv">
+                <button id="play1btn" class="shadow focus">+1 Player One</button>
+                <button id="play2btn" class="shadow focus">+1 Player Two</button>
+                <button id="reset" class="shadow focus">Reset</button>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
