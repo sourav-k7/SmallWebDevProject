@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Comment</h1> 
+   <form method="POST" action="/comment">
+    <label for="username">username:</label>
+    <input type="text" autocomplete="off" name="username" id="username" placeholder="Enter your username">
+    <label >
+        comment:
+        <textarea name="comment"  cols="30" rows="1"></textarea>
+    </label>
+    <button>submit</button>
+    </form>
+   <ul>
+       <% for (c of comments){ %>
+       <li><%= c.comment %> - <b><%= c.username  %> </b>
+        <a href="/comment/<%= c.id %>  ">detail</a>
+     </li>
+       <% }%>
+   </ul>
+</body>
+</html>
