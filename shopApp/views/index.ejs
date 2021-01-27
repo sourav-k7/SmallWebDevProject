@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+   <h1>List of All Products</h1> 
+   <p><a href="/product/new">Create New Product</a></p>
+   <ul>
+       <% for(product of products){ %> 
+        <li><a href="/product/<%= product._id%>" style="text-decoration: none;"><%= product.name %> </a></li>
+        <% } %> 
+
+   </ul>
+
+</body>
+</html>

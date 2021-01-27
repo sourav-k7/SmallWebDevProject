@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+<body>
+   <h1>New Product</h1> 
+   <form action="/product" method="POST">
+    <label for="">
+        Name
+        <input type="text" name="name" autocomplete="off" placeholder="Product Name" id="">
+    </label>
+    <label for="">
+        Price
+        <input type="text" autocomplete="off" name="price" id="" placeholder="Price">
+    </label>
+    <label for="">
+        <select name="category" id="">
+            <% for(category of categories){ %> 
+            <option value="<%=category%>"><%= category %></option>
+            <% } %> 
+        </select>
+    </label>
+    <button>Submit</button>
+   </form>
+</body>
+</html>
